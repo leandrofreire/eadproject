@@ -6,3 +6,6 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request, 'home.html', {'usuario': 'Fulano de tal'})
+
+def contato(request):
+    return render(request, 'contato.html')
