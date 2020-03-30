@@ -1,7 +1,7 @@
-#EAD PROJECT
+# EAD PROJECT
 Um projeto desenvolvido para ser um portal para "indexar" webinars, workshops online e cursos online
 
-###CORE
+### CORE
 Onde todo código do sistema de EAD está desenvolvido
 
 ### EADPROJECT
