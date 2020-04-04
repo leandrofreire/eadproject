@@ -12,3 +12,12 @@ def index(request):
         'courses': courses
     }
     return render(request, template_name, context)
+
+
+def detalhe(request, course_id):
+    course = Course.objects.get(pk=course_id)
+    context = {
+        'course': course
+    }
+    template_name = 'courses/detalhe.html'
+    return render(request, template_name, context)
