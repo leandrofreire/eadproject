@@ -123,3 +123,4 @@ STATIC_URL = '/static/'
 
 # Upload de arquivos - caminho
 MEDIA_ROOT = os.path.join(BASE_DIR, 'eadproject', 'media')
+MEDIA_URL = '/media/'
