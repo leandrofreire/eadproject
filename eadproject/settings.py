@@ -123,3 +123,14 @@ STATIC_URL = '/static/'
 
 # Upload de arquivos - caminho
 MEDIA_ROOT = os.path.join(BASE_DIR, 'eadproject', 'media')
+MEDIA_URL = '/media/'
+
+# E-mails
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = 'YouLearn <eadyoulearn@gmail.com>'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'eadyoulearn@gmail.com'
+EMAIL_HOST_PASSWORD = 'cursos123'
+EMAIL_PORT = 587
+CONTACT_EMAIL = 'eadyoulearn@gmail.com'

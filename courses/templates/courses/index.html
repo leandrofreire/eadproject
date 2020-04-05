@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %} Lista de cursos {% endblock %}
+{% load static %}
+
+{% block content %}
+<div class="pure-g-r content-ribbon">
+    <div class="pure-u-1">
+        <div class="l-box">
+            <h4 class="content-subhead">Listagem de Cursos do YouLearn</h4>
+            <p>Abaixo a lista de cursos disponíveis na plataforma</p>
+        </div>
+    </div>
+</div>
+{% for course in courses %}
+<div class="pure-g-r content-ribbon">
+    <div class="pure-u-1-3">
+        <div class="l-box">
+            <a href="{% url 'courses:detalhe' course.slug %}">
+            {% if course.imagem %}
+                <img src="{{ course.imagem.url }}" alt="{{ course.name }}">
+            {% else %}
+                <img src="{% static 'img/course-image.png' %}">
+            </a>
+            {% endif %}
+        </div>
+    </div>
+    <div class="pure-u-2-3">
+        <div class="l-box">
+            <h4 class="content-subhead"><a href="{% url 'courses:detalhe' course.slug %}" title="">{{ course.name }}</a></h4>
+            {{ course.description|linebreaks }}
+        </div>
+    </div>
+</div>
+{% empty %}
+<div class="pure-g-r content-ribbon">
+    <div class="pure-u-1">
+        <div class="l-box">
+            <p>Nenhum curso disponível na plataforma</p>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
