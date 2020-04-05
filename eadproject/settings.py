@@ -135,3 +135,8 @@ EMAIL_HOST_USER = 'eadyoulearn@gmail.com'
 EMAIL_HOST_PASSWORD = 'cursos123'
 EMAIL_PORT = 587
 CONTACT_EMAIL = 'eadyoulearn@gmail.com'
+
+#Auth
+LOGIN_URL = '/conta/entrar'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_URL = '/conta/logout'
