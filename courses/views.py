@@ -22,6 +22,7 @@ def detalhe(request, course_slug):
         form = ContactCourse(request.POST)
         if form.is_valid():
             context['is_valid'] = True
+            form.send_mail(course)
             form = ContactCourse()
     else:
         form = ContactCourse()
