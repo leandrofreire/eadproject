@@ -23,6 +23,7 @@
                 <li><a href="/cursos">Cursos</a></li>
                 {% if user.is_authenticated %}
                 <li><a href="/conta/sair">Sair</a></li>
+                <li><a href="/conta/">Painel</a></li>
                 {% else %}
                 <li><a href="/conta/entrar">Entrar</a></li>
                 {% endif %}
