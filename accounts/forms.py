@@ -2,6 +2,10 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import get_user_model
 
+from accounts.models import PasswordReset
+from core.mail import send_mail_template
+from core.utils import generate_hash_key
+
 User = get_user_model()
 
 
@@ -14,9 +18,18 @@ class PasswordResetForm(forms.Form):
             return email
         raise forms.ValidationError('Nenhum usuário encontrado com este e-mail')
 
+    def save(self):
+        user = User.objects.get(email=self.cleaned_data['email'])
+        key = generate_hash_key(user.username)
+        reset = PasswordReset(key=key, user=user)
+        reset.save()
+        template_name = 'accounts/password_reset_mail.html'
+        subject = 'Criar nova senha no Eadproject'
+        context = {'reset': reset}
+        send_mail_template(subject, template_name, context, [user.email])
+
 
 class RegisterForm(forms.ModelForm):
-
     password1 = forms.CharField(label='Senha', widget=forms.PasswordInput)
     password2 = forms.CharField(
         label='Confirmação de Senha', widget=forms.PasswordInput
@@ -42,7 +55,6 @@ class RegisterForm(forms.ModelForm):
 
 
 class EditAccountForm(forms.ModelForm):
-
     class Meta:
         model = User
         fields = ['username', 'email', 'name']
