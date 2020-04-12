@@ -33,6 +33,7 @@ class Course(models.Model):
 
 
 class Enrollment(models.Model):
+    objects = None
     STATUS_CHOICES = (
         (0, 'Pendente'),
         (1, 'Aprovado'),
@@ -48,6 +49,10 @@ class Enrollment(models.Model):
 
     created_at = models.DateTimeField('Criado em', auto_now_add=True)
     updated_at = models.DateTimeField('Atualizado em', auto_now=True)
+
+    def active(self):
+        self.status = 1
+        self.save()
 
     class Meta:
         verbose_name = 'Inscrição'
