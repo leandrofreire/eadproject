@@ -115,12 +115,11 @@ body .primary-button {
     color: #fff;
     text-align: center;
     padding: 1em;
+    position: absolute;
     font-size: 80%;
     bottom: 0;
     left: 0;
     width: 100%;
-    position: fixed;
-
 }
 ul.errorlist {
     margin: 0;
