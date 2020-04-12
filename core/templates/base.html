@@ -7,7 +7,7 @@
     <meta name="description" content="Simple MOOC - Uma simples plataforma de ensino a distância" />
     <title>
         {% block title %}
-        {{ page_title|default:"Base Page" }}
+        {{ page_title|default:"You Learn" }}
         {% endblock title %}
     </title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
@@ -20,8 +20,16 @@
             <a class="pure-menu-heading" href="/">YouLearn</a>
             <ul>
                 <li class="pure-menu-selected"><a href="/">Início</a></li>
-                <li><a href="/cursos">Cursos</a></li>
+                <li><a href="/sobre">Sobre nós</a></li>
                 <li><a href="/contato">Contato</a></li>
+                <li><a href="/cursos">Cursos</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="/conta/">Painel</a></li>
+                <li><a href="/conta/sair">Sair</a></li>
+                {% else %}
+                <li><a href="/conta/entrar">Entrar</a></li>
+                {% endif %}
+
             </ul>
         </div>
     </div>
