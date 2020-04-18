@@ -85,6 +85,7 @@ class Material(models.Model):
 
 
 class Enrollment(models.Model):
+    DoesNotExist = None
     objects = None
     STATUS_CHOICES = (
         (0, 'Pendente'),
