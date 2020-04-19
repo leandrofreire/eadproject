@@ -1,5 +1,7 @@
 from django.urls import path
 from django.contrib.auth.views import LoginView, LogoutView
+from django.conf.urls.static import static
+from django.conf import settings
 
 from . import views
 app_name = 'accounts'
@@ -13,4 +15,4 @@ urlpatterns = [
     path('editar-senha/', views.edit_password, name='edit_password'),
     path('confirmar\\-senha/(?P<key>[0-9]+)$', views.password_reset_confirm, name='password_reset_confirm'),
     path('', views.dashboard, name='dashboard')
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
