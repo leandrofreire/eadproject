@@ -118,6 +118,9 @@ body .primary-button {
     text-align: center;
     padding: 1em;
     font-size: 80%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 ul.errorlist {
     margin: 0;
