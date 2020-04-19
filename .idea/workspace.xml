@@ -73,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="133" selection-start-line="133" selection-end-line="133" />
+              <caret line="206" selection-start-line="206" selection-end-line="206" />
             </state>
           </provider>
         </entry>
@@ -132,6 +132,7 @@
       <find>clyen</find>
       <find>menu</find>
       <find>navigator-updater==0.2.1</find>
+      <find>pywin32==223</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -732,7 +733,7 @@
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="133" selection-start-line="133" selection-end-line="133" />
+          <caret line="206" selection-start-line="206" selection-end-line="206" />
         </state>
       </provider>
     </entry>
