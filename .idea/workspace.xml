@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7604858-31ee-4bf0-be15-7bc533704fd1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/eadproject/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,10 +70,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+        <entry file="file://$PROJECT_DIR$/eadproject/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            <state relative-caret-position="66">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -152,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/courses/mail.py" />
         <option value="$PROJECT_DIR$/courses/templates/courses/index.html" />
         <option value="$PROJECT_DIR$/core/mail.py" />
         <option value="$PROJECT_DIR$/courses/templates/courses/contact_email.html" />
@@ -203,6 +202,7 @@
         <option value="$PROJECT_DIR$/core/static/css/styles.css" />
         <option value="$PROJECT_DIR$/eadproject/settings.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/eadproject/requirements.txt" />
       </list>
     </option>
   </component>
@@ -229,24 +229,6 @@
             <path>
               <item name="eadproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="eadproject" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eadproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eadproject" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eadproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eadproject" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eadproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eadproject" type="462c0819:PsiDirectoryNode" />
               <item name="eadproject" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -262,12 +244,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Leandro Freire\Desktop\eadproject\courses\templates\courses" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Leandro Freire\Desktop\eadproject\courses\migrations" />
       <recent name="C:\Users\Leandro Freire\Desktop\eadproject\accounts\migrations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Leandro Freire\Desktop\eadproject\eadproject" />
+      <recent name="C:\Users\Leandro Freire\Desktop\eadproject\courses\templates\courses" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -741,10 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/eadproject/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        <state relative-caret-position="66">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
