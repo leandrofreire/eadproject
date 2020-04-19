@@ -81,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="66">
+              <caret line="3" column="18" selection-start-line="3" selection-end-line="3" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -733,8 +733,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="66">
+          <caret line="3" column="18" selection-start-line="3" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
