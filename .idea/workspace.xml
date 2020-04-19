@@ -72,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="206" selection-start-line="206" selection-end-line="206" />
+            <state relative-caret-position="403">
+              <caret line="278" column="13" selection-start-line="278" selection-start-column="13" selection-end-line="278" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -133,6 +133,7 @@
       <find>menu</find>
       <find>navigator-updater==0.2.1</find>
       <find>pywin32==223</find>
+      <find>xlw</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -732,8 +733,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="206" selection-start-line="206" selection-end-line="206" />
+        <state relative-caret-position="403">
+          <caret line="278" column="13" selection-start-line="278" selection-start-column="13" selection-end-line="278" selection-end-column="13" />
         </state>
       </provider>
     </entry>
