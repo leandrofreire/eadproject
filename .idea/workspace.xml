@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7604858-31ee-4bf0-be15-7bc533704fd1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eadproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/eadproject/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,11 +69,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="44">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eadproject/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -134,6 +143,7 @@
       <find>navigator-updater==0.2.1</find>
       <find>pywin32==223</find>
       <find>xlw</find>
+      <find>Allo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,7 +176,6 @@
         <option value="$PROJECT_DIR$/accounts/templates/accounts/edit.html" />
         <option value="$PROJECT_DIR$/accounts/views.py" />
         <option value="$PROJECT_DIR$/courses/templatetags/__init__.py" />
-        <option value="$PROJECT_DIR$/eadproject/settings.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/template/library.py" />
         <option value="$PROJECT_DIR$/courses/templates/courses/templatetags/my_courses.html" />
         <option value="$PROJECT_DIR$/courses/templatetags/courses_tags.py" />
@@ -193,6 +202,7 @@
         <option value="$PROJECT_DIR$/eadproject/Procfile" />
         <option value="$PROJECT_DIR$/core/static/css/styles.css" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/eadproject/settings.py" />
       </list>
     </option>
   </component>
@@ -665,13 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eadproject/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courses/templates/courses/material.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -733,8 +736,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eadproject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
         </state>
       </provider>
     </entry>
