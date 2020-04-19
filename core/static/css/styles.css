@@ -118,7 +118,7 @@ body .primary-button {
     text-align: center;
     padding: 1em;
     font-size: 80%;
-    position: absolute;
+    position: inherit;
     bottom: 0;
     width: 100%;
 }
