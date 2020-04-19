@@ -2,6 +2,8 @@ from django.db import models
 from django.conf import settings
 
 # Método para buscar cursos
+from django.utils import timezone
+
 from core.mail import send_mail_template
 
 
@@ -28,13 +30,74 @@ class Course(models.Model):
     def __str__(self):
         return self.name
 
+    def release_lessons(self):
+        today = timezone.now().date()
+        return self.lessons.filter(release_date__gte=today)
+
     class Meta:
         verbose_name = 'Curso'
         verbose_name_plural = 'Cursos'
         ordering = ['name']
 
 
+class Lesson(models.Model):
+    name = models.CharField('Nome', max_length=100)
+    description = models.TextField('Descrição', blank=True)
+    number = models.IntegerField('Número (ordem)', blank=True, default=0)
+    release_date = models.DateField('Data de Liberação', blank=True, null=True)
+
+    course = models.ForeignKey(
+        Course,
+        verbose_name='Curso',
+        on_delete=models.PROTECT,
+        related_name='lessons'
+    )
+    created_at = models.DateTimeField('Criado em', auto_now_add=True)
+    updated_at = models.DateTimeField('Atualizado em', auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+    def is_available(self):
+        if self.release_date:
+            today = timezone.now().date()
+            return self.release_date >= today
+        return False
+
+    class Meta:
+        verbose_name = 'Aula'
+        verbose_name_plural = 'Aulas'
+        ordering = ['number']
+
+
+class Material(models.Model):
+    name = models.CharField('Nome', max_length=100)
+    embedded = models.TextField('Vídeo embedded', blank=True)
+    file = models.FileField(
+        upload_to='lessons/materials',
+        blank=True,
+        null=True
+    )
+    lesson = models.ForeignKey(
+        Lesson,
+        verbose_name='Aula',
+        on_delete=models.PROTECT,
+        related_name='materials'
+    )
+
+    def is_embedded(self):
+        return bool(self.embedded)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Material'
+        verbose_name_plural = 'Materiais'
+
+
 class Enrollment(models.Model):
+    DoesNotExist = None
     objects = None
     STATUS_CHOICES = (
         (0, 'Pendente'),
