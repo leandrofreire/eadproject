@@ -151,3 +151,8 @@ def material(request, slug, pk):
         'material': material
     }
     return render(request, template_name, context)
+
+
+@login_required
+def criar_curso(request):
+    return render(request, 'courses/criar_curso.html')
