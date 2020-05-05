@@ -27,6 +27,7 @@
                 {% if user.is_authenticated %}
                 <li><a href="/conta/">Painel</a></li>
                 <li><a href="/conta/sair">Sair</a></li>
+                <li><a href="{% url 'courses:criar_curso' %}">Criar Curso</a></li>
                 {% else %}
                 <li><a href="/conta/entrar">Entrar</a></li>
                 {% endif %}
@@ -48,9 +49,9 @@
         {% block content %}
         {% endblock content %}
     </div>
-    <div class="footer">
+    <!--<div class="footer">
         NOME - Encontre os melhores conteúdos para seu aprendizado
-    </div>
+    </div>-->
 </div>
 <script src="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"></script>
 </body>
