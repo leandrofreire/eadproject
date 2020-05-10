@@ -25,6 +25,7 @@ class Course(models.Model):
     imagem = models.ImageField(upload_to='courses/imagens', verbose_name='Imagem', null=True, blank=True)
     created_at = models.DateTimeField('Criado em', auto_now_add=True)
     updated_at = models.DateTimeField('Atualizado em', auto_now=True)
+    price = models.CharField('Valor do curso', max_length=50)
     objects = CourseManager()
 
     def __str__(self):

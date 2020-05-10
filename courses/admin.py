@@ -5,7 +5,7 @@ from .models import Course, Enrollment, Announcement, Comment, Lesson, Material
 
 
 class CourseAdmin(admin.ModelAdmin):
-    list_display = ['name', 'slug', 'start_date', 'created_at']
+    list_display = ['name', 'slug', 'start_date', 'created_at', 'price']
     search_fields = ['name', 'slug']
     prepopulated_fields = {"slug": ('name',)}
 
