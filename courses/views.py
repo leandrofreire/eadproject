@@ -36,6 +36,16 @@ def detalhe(request, course_slug):
 
 
 @login_required
+def checkout(request, slug):
+    course = get_object_or_404(Course, slug=slug)
+    template_name = 'courses/checkout.html'
+    context = {
+        'course': course
+    }
+    return render(request, template_name, context)
+
+
+@login_required
 def enrollment(request, slug):
     course = get_object_or_404(Course, slug=slug)
     enrollment, created = Enrollment.objects.get_or_create(

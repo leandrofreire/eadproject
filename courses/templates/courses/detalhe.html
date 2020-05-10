@@ -15,7 +15,8 @@
                     {{ course.description }}
                 </h2>
                 <p>
-                    <a href="{% url 'courses:enrollment' course.slug %}" class="pure-button primary-button">Inscreva-se</a>
+                    <!--<a href="{% url 'courses:enrollment' course.slug %}" class="pure-button primary-button">Inscreva-se</a>-->
+                    <a href="{% url 'courses:checkout' course.slug %}" class="pure-button button-success">Comprar o Curso</a>
                 </p>
             </div>
         </div>
