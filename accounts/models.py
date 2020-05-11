@@ -38,7 +38,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 
 class PasswordReset(models.Model):
-
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL, on_delete=models.PROTECT, verbose_name='Usuário',
         related_name='reset'
@@ -51,6 +50,25 @@ class PasswordReset(models.Model):
         return '{0} em {1}'.format(self.user, self.created_at)
 
     class Meta:
-        verbose_name= 'Nova Senha'
+        verbose_name = 'Nova Senha'
         verbose_name_plural = 'Novas Senhas'
         ordering = ['-created_at']
+
+
+class Professor(models.Model):
+    name = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.PROTECT,
+        verbose_name='Professor'
+    )
+    email = models.EmailField('Email')
+    especialidade = models.CharField('Escpecialidade', max_length=100)
+    linkedin = models.CharField('Linkedin', max_length=200)
+    bio = models.TextField('Bio')
+
+    def __str__(self):
+        return self.email
+
+    class Meta:
+        verbose_name = 'Professor'
+        verbose_name_plural = 'Professores'

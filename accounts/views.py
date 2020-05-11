@@ -5,7 +5,7 @@ from django.contrib.auth.forms import PasswordChangeForm, SetPasswordForm
 from django.contrib import messages
 from courses.models import Enrollment
 
-from accounts.models import PasswordReset
+from accounts.models import PasswordReset, Professor
 from .forms import RegisterForm, EditAccountForm, PasswordResetForm
 
 User = get_user_model()
@@ -90,3 +90,21 @@ def edit_password(request):
         form = PasswordChangeForm(user=request.user)
     context['form'] = form
     return render(request, template_name, context)
+
+
+@login_required
+def professor(request):
+    if request.method == 'POST':
+       name = get_object_or_404(User, pk=request.user.id)
+       email = request.POST['email']
+       especialidade = request.POST['especialidade']
+       linkedin = request.POST['linkedin']
+       bio = request.POST['bio']
+       professor = Professor.objects.create(
+           name=name, email=email, especialidade=especialidade,
+           linkedin=linkedin, bio=bio)
+       professor.save()
+       return redirect('accounts:dashboard')
+    else:
+        return render(request, 'accounts/seja_professor.html')
+

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %} Se torne um instrutor na Labcurso {% endblock %}
+{% block content %}
+<h1>Seja um instrutor</h1>
+<form action="{% url 'accounts:professor' %}" method="post">
+    {% csrf_token %}
+    <div>
+        <label for="">Nome do usuário</label>
+        <input type="text" value="{{ user.name }}" disabled>
+    </div>
+
+    <div>
+        <label for="">Email Para se comunicar com os alunos</label>
+        <input type="email" name="email">
+    </div>
+
+    <div>
+        <label for="">Sua especialidade</label>
+        <input type="text" required name="especialidade">
+    </div>
+
+    <div>
+        <label for="">Link do Linkedin</label>
+        <input type="text" required name="linkedin">
+    </div>
+    <div>
+        <label for="">Apresentação</label>
+        <textarea name="bio" id="" cols="30" rows="10" ></textarea>
+    </div>
+    <button type="submit">Seja instrutor</button>
+</form>
+{% endblock %}
